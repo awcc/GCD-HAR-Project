@@ -24,6 +24,6 @@ Training and test data are read in, selecting only variables corresponding to th
 
 The data frame har\_data is the large, unaveraged data frame requested in item 4 of the specification. It contains one observation per row, with the subject and activity in the first two columns and each measurement's mean and standard deviation as a variable.
 
-The data frame har\_ave and the output file har\_averages.txt contain averages for each feature, as requested in item 5 of the specification. These meet the tidy data specification:
+I then melt and cast (using dcast) this data frame using Hadley Wickham's reshape2 package to produce a data frame har\_ave and an output file har\_averages.txt containing averages for each feature, as requested in item 5 of the specification. These meet the tidy data specification:
 
 I have chosen the "wide" style of tidy data because each of the many variables is in fact all part of the same observation. See Hadley Wickham's paper on tidy data: http://vita.had.co.nz/papers/tidy-data.pdf especially Table 12, as well as the course discussion thread discussing wide and narrow tidy data: https://class.coursera.org/getdata-008/forum/thread?thread_id=94
