@@ -51,3 +51,5 @@ fBodyGyroMag
 fBodyGyroJerkMag
 
 To clarify, the first of these variables in the file is tBodyAcc.Mean.X, the second is tBodyAcc.Mean.Y, and the last is fBodyGyroJerkMag.SD
+
+According to the files accompanying the original dataset, the signals were captured using a Samsung Galaxy S II strapped to the waist of the subject. The time domain signals were captured at a constant rate of 50 Hz and then filtered using a median filter and 3rd order low pass Butterworth filter with a corner frequency of 20 Hz. The separation of the acceleration signal into Body and Gravity acceleration signals used a low pass Butterworth filter with a corner frequency of 0.3 Hz.
